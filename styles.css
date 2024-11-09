@@ -1,0 +1,103 @@
+/* 基本的樣式設置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* 漸層背景 */
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 頁首樣式 */
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* 文章區域 */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background-color: rgba(255, 255, 255, 0.1); /* 半透明白色背景 */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.post-excerpt {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* 頁尾樣式 */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
